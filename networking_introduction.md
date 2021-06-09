@@ -98,3 +98,81 @@ UDP (User datagram protocol) similar transport layer, does not provide reliabili
 Session, presentation and application have been merged into one layer, Application
 
 Related to the application and the software running
+### Ports numbers
+Port numbers (range from 0 - 65535)(TCP and UDP use the same range)
+
+65535 = 2^16 = 16 bits
+
+Internet assigned number authority (IANA) incharge of number above.
+
+0-1023 = well-known ports
+
+1024- 49151 = registed ports
+
+48152-65535 = dynamic ports
+
+Bandwidth: Capacity that the media can carry data
+
+Well-Known Port Numbers
+
+Port |Number	Protocol|	Application|
+|:---------: |:----------------------------: |:--------: |
+20|	TCP|	File Transfer Protocol (FTP) – Data|
+21|	TCP|	File Transfer Protocol (FTP) – Control|
+22|	TCP	|Secure Shell (SSH)|
+23|	TCP	|Telnet|
+25|	TCP	|Simple Mail Transfer Protocol (SMTP)|
+53|	UDP, TCP|	Domain Name Service (DNS)|
+67|	UDP|	Dynamic Host Configuration Protocol (DHCP) – Server|
+68|	UDP|	Dynamic Host Configuration Protocol – Client|
+69|	UDP|	Trivial File Transfer Protocol (TFTP)|
+80|	TCP|	Hypertext Transfer Protocol (HTTP)|
+110|	TCP|	Post Office Protocol version 3 (POP3)|
+143|	TCP|	Internet Message Access Protocol (IMAP)|
+161|	UDP|	Simple Network Management Protocol (SNMP)|
+443|	TCP|	Hypertext Transfer Protocol Secure (HTTPS)|
+
+
+# Third recording (07/06/2021)
+IP addressing:
+Positional numeral system 
+# Fourth recording (07/06/2021)
+MAC = Media Access Control (similar to a serial number) 
+
+48 bit number, first 6 characters represent the vendor, second 6 represent the NIC
+
+NIC = Network interface Card (includes the Mac address)
+
+Command prompt for MAC address = ipconfig /all
+
+Network layer addressing:
+IP (Internet protocol) address
+- Ipv4
+    - A series of 1s and 0s. 32 bits long. 4 octets (1 octets = 8 bits)
+    - Represented as decimal
+    - example 
+        - IP = 172.16.254.1
+        - Binary = 10101100.00010000.11111110.00000001
+        - 32 bits, 4 octets
+
+You need to know if 2 devices are in the ame network or not, by comparing their network ID
+
+They are put into classes to determine if theyre in the same network 
+![img.png](classes.png)
+# Fifth recording (07/06/2021)
+
+If an IP includes /number
+
+The number of 1s in the subnet mask, which is the network address
+
+Subnet mask
+
+network can be 1,2 or 3 octets, the rest is host
+
+series of 1s, follwed by a series of 0s
+
+1s represnet the network ID
+
+0s represent the host ID 
+
+The first address in the network is the network adresss
