@@ -175,4 +175,4 @@ series of 1s, follwed by a series of 0s
 
 0s represent the host ID 
 
-The first address in the network is the network adresss
+The first address in the network is the network address
